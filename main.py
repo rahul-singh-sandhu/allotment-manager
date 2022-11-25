@@ -13,7 +13,7 @@ db_connection.close()
 
 while True:
     user_exec = input("Prompt/> ")
-    if user_exec.lower() == 'quit' or 'exit':
+    if user_exec.lower() in ['quit', 'exit']:
         print("Goodbye!")
         exit()
     else:
