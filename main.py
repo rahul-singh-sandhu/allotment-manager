@@ -7,6 +7,14 @@ db_connection.execute('''CREATE TABLE USERS
             NAME            TEXT NOT NULL,
             ADDRESS         CHAR(50),
             PHONENUMBER     INT,
-            PLANTID         //On that);''')
+            PLANTID         );''')
 
 db_connection.close()
+
+while True:
+    user_exec = input("Prompt/> ")
+    if user_exec.lower() == 'quit' or 'exit':
+        print("Goodbye!")
+        exit()
+    else:
+        pass
