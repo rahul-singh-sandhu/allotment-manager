@@ -1,13 +1,12 @@
 import sqlite3
 
-conn = sqlite3.connect('allotment.db')
-print("Opened database successfully")
+db_connection = sqlite3.connect('allotment.db')
 
-conn.execute('''CREATE TABLE USERS
+db_connection.execute('''CREATE TABLE USERS
             (ID INT PRIMARY KEY NOT NULL,
             NAME            TEXT NOT NULL,
             ADDRESS         CHAR(50),
-            PLANTID         INT);''')
-print("Table created successfully")
+            PHONENUMBER     INT,
+            PLANTID         //On that);''')
 
-conn.close()
+db_connection.close()
